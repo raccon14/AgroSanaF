@@ -1,0 +1,20 @@
+{
+    "name": "AgroSana · Insumos para el campo de la Costa Grande",
+    "short_name": "AgroSana",
+    "description": "Fertilizantes, fungicidas, coadyuvantes y bioestimulantes con asesoría para el campo de la Costa Grande de Guerrero.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#FBFBF7",
+    "theme_color": "#1B6B2A",
+    "lang": "es-MX",
+    "icons": [
+        {
+        "src": "./img/logo.svg",
+        "sizes": "any",
+        "type": "image/svg+xml",
+        "purpose": "any maskable"
+        }
+    ]
+}

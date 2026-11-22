@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSana · Insumos para el campo de la Costa Grande</title>
+    <meta name="description" content="AgroSana, Zihuatanejo: fertilizantes, fungicidas, coadyuvantes y bioestimulantes con asesoría para el campo de la Costa Grande de Guerrero.">
+    <meta name="theme-color" content="#1B6B2A">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <a class="saltar" href="#principal">Saltar al contenido</a>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a class="marca" href="#inicio">
+            <img src="img/logo.svg" alt="AgroSana" width="48" height="48">
+            <span class="marca-texto">
+                <span class="marca-nombre">AgroSana</span>
+                <span class="marca-lema">El agricultor</span>
+            </span>
+        </a>
+
+        <button class="boton-menu" type="button" aria-label="Menú" aria-controls="menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <nav class="navegacion" aria-label="Principal">
+            <ul id="menu" class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#uso-seguro">Uso seguro</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="menu-item-instalar" hidden>
+                    <button id="boton-instalar" class="boton boton-principal boton-instalar" type="button">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>Instalar app
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="principal">
+
+        <!-- INICIO: panel de etiqueta (system.md → Panel de etiqueta) -->
+        <section id="inicio" class="marco">
+            <div class="etiqueta">
+                <div class="etiqueta-texto">
+                    <h1>Insumos para el campo de la Costa Grande</h1>
+                    <p>En AgroSana surtimos fertilizantes, fungicidas, coadyuvantes y bioestimulantes para huertas y parcelas de Zihuatanejo y sus alrededores, con asesoría para elegir el producto adecuado para cada cultivo.</p>
+                    <a class="boton boton-principal" href="#productos">
+                        <i class="fa-solid fa-seedling" aria-hidden="true"></i>Ver productos
+                    </a>
+                </div>
+                <div class="etiqueta-datos">
+                    <figure>
+                        <img src="img/hydrospeed-cab-max.jpg" alt="Saco de HydroSpeed CaB-Max, fertilizante soluble con calcio y boro" width="176" height="287">
+                        <figcaption>HydroSpeed CaB-Max, uno de nuestros cinco productos</figcaption>
+                    </figure>
+                    <dl>
+                        <dt>Casa</dt><dd>AgroSana, Zihuatanejo, Guerrero</dd>
+                        <dt>Atención</dt><dd>Lunes a sábado, 8:00 a 18:00</dd>
+                        <dt>Entrega</dt><dd>Zihuatanejo, Petatlán y La Unión</dd>
+                    </dl>
+                </div>
+            </div>
+            <nav class="franja" aria-label="Productos por categoría">
+                <a href="#productos" data-categoria="fertilizantes">Fertilizantes</a>
+                <a href="#productos" data-categoria="fungicidas">Fungicidas</a>
+                <a href="#productos" data-categoria="coadyuvantes">Coadyuvantes</a>
+                <a href="#productos" data-categoria="bioestimulantes">Bioestimulantes</a>
+            </nav>
+        </section>
+
+        <!-- USO SEGURO: bloque de precauciones -->
+        <section id="uso-seguro" class="seccion">
+            <div class="cabeza">
+                <h2>Uso seguro</h2>
+                <p>Como en toda etiqueta, las precauciones van primero.</p>
+            </div>
+            <div class="precaucion">
+                <p class="precaucion-barra"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>Precauciones antes de aplicar cualquier producto</p>
+                <ul class="pictos">
+                    <li><span class="picto"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span><p><strong>Lee la etiqueta completa</strong> antes de comprar, mezclar o aplicar: ahí vienen la dosis, los cultivos y los días de espera antes de cosechar.</p></li>
+                    <li><span class="picto"><i class="fa-solid fa-mask-face" aria-hidden="true"></i></span><p><strong>Usa equipo de protección:</strong> guantes, lentes, mascarilla, camisa de manga larga y botas.</p></li>
+                    <li><span class="picto"><i class="fa-solid fa-wind" aria-hidden="true"></i></span><p><strong>Aplica sin viento ni lluvia,</strong> temprano o al atardecer, y lejos de casas, pozos y arroyos.</p></li>
+                    <li><span class="picto"><i class="fa-solid fa-lock" aria-hidden="true"></i></span><p><strong>Guarda bajo llave,</strong> en su envase original y lejos de niños, animales y alimentos.</p></li>
+                </ul>
+                <ul id="mas-recomendaciones" class="pictos" hidden>
+                    <li><span class="picto"><i class="fa-solid fa-recycle" aria-hidden="true"></i></span><p><strong>Haz el triple lavado</strong> de los envases vacíos, perfóralos y llévalos a un centro de acopio.</p></li>
+                    <li><span class="picto"><i class="fa-solid fa-soap" aria-hidden="true"></i></span><p><strong>Lávate al terminar</strong> y lava la ropa de trabajo aparte. No comas, bebas ni fumes mientras aplicas.</p></li>
+                    <li><span class="picto"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></span><p><strong>Si alguien se intoxica,</strong> busca atención médica de inmediato y lleva la etiqueta del producto.</p></li>
+                </ul>
+                <div class="precaucion-pie">
+                    <button id="ver-mas" class="boton boton-secundario" type="button" aria-expanded="false" aria-controls="mas-recomendaciones">
+                        <i class="fa-solid fa-plus" aria-hidden="true"></i><span class="ver-mas-texto">Ver más precauciones</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS: filtro y fichas -->
+        <section id="productos" class="seccion">
+            <div class="cabeza">
+                <h2>Productos</h2>
+                <p>Cada producto con su categoría, como en su etiqueta.</p>
+            </div>
+
+            <div class="filtros" role="group" aria-label="Filtrar por categoría">
+                <button class="filtro" type="button" data-categoria="todos" aria-pressed="true">Todos</button>
+                <button class="filtro" type="button" data-categoria="fertilizantes" aria-pressed="false">Fertilizantes</button>
+                <button class="filtro" type="button" data-categoria="fungicidas" aria-pressed="false">Fungicidas</button>
+                <button class="filtro" type="button" data-categoria="coadyuvantes" aria-pressed="false">Coadyuvantes</button>
+                <button class="filtro" type="button" data-categoria="bioestimulantes" aria-pressed="false">Bioestimulantes</button>
+            </div>
+            <p id="resultado-filtro" class="resultado-filtro" aria-live="polite">Mostrando 5 productos</p>
+
+            <div class="rejilla rejilla-productos">
+                    <article class="producto" data-categoria="bioestimulantes" data-uso="Bioestimulante que ayuda a la planta a florecer y a amarrar fruto en huertas y hortalizas. La etiqueta indica en qué cultivos se puede usar.">
+                        <div class="producto-cabecera">
+                            <span class="categoria">Bioestimulantes</span>
+                        </div>
+                        <h3>Frutime</h3>
+                        <img src="img/frutime.jpg" alt="Envase de Frutime" width="194" height="259">
+                        <p class="descripcion">Regulador de crecimiento que apoya la floración y el amarre de fruto.</p>
+                        <button class="boton boton-secundario ver-detalles" type="button">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>Ver detalles<span class="visualmente-oculto"> de Frutime</span>
+                        </button>
+                    </article>
+
+                    <article class="producto" data-categoria="coadyuvantes" data-uso="Coadyuvante que baja el pH del agua de la mezcla y ayuda a que el producto se disperse y moje mejor la hoja.">
+                        <div class="producto-cabecera">
+                            <span class="categoria">Coadyuvantes</span>
+                        </div>
+                        <h3>Bio pH</h3>
+                        <img src="img/bio-ph.jpg" alt="Envase de Bio pH" width="225" height="225">
+                        <p class="descripcion">Acidificante, dispersante y humectante para el agua de aplicación.</p>
+                        <button class="boton boton-secundario ver-detalles" type="button">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>Ver detalles<span class="visualmente-oculto"> de Bio pH</span>
+                        </button>
+                    </article>
+
+                    <article class="producto" data-categoria="fertilizantes" data-uso="Fertilizante hidrosoluble que aporta nitrógeno, calcio y boro para fortalecer tejidos, flores y frutos. Se aplica disuelto en el riego o en aspersión.">
+                        <div class="producto-cabecera">
+                            <span class="categoria">Fertilizantes</span>
+                            <span class="composicion">15-0-0 + 26 CaO + 0.2 B</span>
+                        </div>
+                        <h3>HydroSpeed CaB-Max</h3>
+                        <img src="img/hydrospeed-cab-max.jpg" alt="Saco de HydroSpeed CaB-Max" width="176" height="287">
+                        <p class="descripcion">Fertilizante soluble con calcio y boro para la firmeza del fruto y el amarre.</p>
+                        <button class="boton boton-secundario ver-detalles" type="button">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>Ver detalles<span class="visualmente-oculto"> de HydroSpeed CaB-Max</span>
+                        </button>
+                    </article>
+
+                    <article class="producto" data-categoria="coadyuvantes" data-uso="Coadyuvante que reduce la tensión superficial del agua para que la aspersión cubra y se adhiera mejor a la hoja.">
+                        <div class="producto-cabecera">
+                            <span class="categoria">Coadyuvantes</span>
+                        </div>
+                        <h3>Surfatek</h3>
+                        <img src="img/surfatek.jpg" alt="Garrafa y botella de Surfatek" width="194" height="260">
+                        <p class="descripcion">Surfactante que mejora la cobertura de la aspersión sobre la hoja.</p>
+                        <button class="boton boton-secundario ver-detalles" type="button">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>Ver detalles<span class="visualmente-oculto"> de Surfatek</span>
+                        </button>
+                    </article>
+
+                    <article class="producto" data-categoria="fungicidas" data-uso="Fungicida sistémico a base de carbendazim al 50 % para enfermedades causadas por hongos. Su etiqueta es de precaución: aplícalo siempre con equipo de protección.">
+                        <div class="producto-cabecera">
+                            <span class="categoria">Fungicidas</span>
+                            <span class="composicion">Carbendazim 50 %</span>
+                        </div>
+                        <h3>Prozycar</h3>
+                        <img src="img/prozycar.jpg" alt="Bolsa de Prozycar" width="194" height="259">
+                        <p class="descripcion">Fungicida en polvo humectable con carbendazim al 50 %.</p>
+                        <button class="boton boton-secundario ver-detalles" type="button">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>Ver detalles<span class="visualmente-oculto"> de Prozycar</span>
+                        </button>
+                    </article>
+                </div>
+        </section>
+
+        <!-- NOSOTROS: tarjetas desiguales (CA7) -->
+        <section id="nosotros" class="seccion">
+            <div class="cabeza">
+                <h2>Quiénes somos</h2>
+                <p>Casa agroquímica de Zihuatanejo para huertas de mango, palmares de coco, maíz y hortalizas.</p>
+            </div>
+            <div class="rejilla rejilla-nosotros">
+                <article class="tarjeta tarjeta-destacada">
+                    <i class="fa-solid fa-user-tie tarjeta-icono" aria-hidden="true"></i>
+                    <h3>Asesoría en campo</h3>
+                    <p>Visitamos tu parcela para revisar el cultivo y recomendarte qué aplicar y cuándo, según la etapa y el clima.</p>
+                </article>
+                <article class="tarjeta">
+                    <i class="fa-solid fa-award tarjeta-icono" aria-hidden="true"></i>
+                    <h3>Marcas reconocidas</h3>
+                    <p>Productos con su etiqueta e instrucciones de uso en español.</p>
+                </article>
+                <article class="tarjeta">
+                    <i class="fa-solid fa-truck tarjeta-icono" aria-hidden="true"></i>
+                    <h3>Entrega en la región</h3>
+                    <p>Zihuatanejo, Petatlán, La Unión y comunidades cercanas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion">
+            <div class="cabeza">
+                <h2>Contacto</h2>
+                <p>¿No sabes qué producto necesita tu cultivo? Te asesoramos.</p>
+            </div>
+            <div class="distribuye">
+                <div>
+                    <h3>Distribuye: AgroSana</h3>
+                    <p>Zihuatanejo, Guerrero. Lunes a sábado, 8:00 a 18:00.</p>
+                    <a class="boton boton-principal" href="mailto:contacto@agrosana.com?subject=Solicitud%20de%20asesor%C3%ADa">
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>Solicitar asesoría
+                    </a>
+                </div>
+                <div>
+                    <ul class="datos-contacto">
+                        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+527550000000">755 000 0000</a></li>
+                        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:contacto@agrosana.com">contacto@agrosana.com</a></li>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Zihuatanejo, Guerrero</span></li>
+                        <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Lunes a sábado, 8:00 a 18:00</span></li>
+                    </ul>
+                    <p class="nota">Datos de contacto de ejemplo para la práctica.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE: la advertencia abre el pie (CA13) -->
+    <footer class="pie">
+        <p class="advertencia"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>Lee siempre la etiqueta antes de usar cualquier producto.</p>
+        <div class="pie-contenido">
+            <p class="pie-marca">© 2026 AgroSana, Zihuatanejo, Guerrero</p>
+            <nav aria-label="Secciones">
+                <ul class="pie-enlaces">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#uso-seguro">Uso seguro</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- VENTANA MODAL DE DETALLES -->
+    <dialog id="modal-producto" class="modal" aria-labelledby="modal-titulo">
+        <div class="modal-cabecera">
+            <span class="categoria">Bioestimulantes</span>
+            <button class="cerrar-modal" type="button" aria-label="Cerrar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="modal-contenido">
+            <img class="modal-imagen" src="img/frutime.jpg" alt="Envase de Frutime" width="194" height="259">
+            <div class="modal-texto">
+                <h3 id="modal-titulo">Frutime</h3>
+                <p class="modal-descripcion">Bioestimulante que ayuda a la planta a florecer y a amarrar fruto en huertas y hortalizas.</p>
+                <p class="modal-aviso">Lee y sigue siempre la etiqueta del producto y consulta a un asesor antes de aplicarlo.</p>
+            </div>
+        </div>
+    </dialog>
+
+</body>
+</html>
